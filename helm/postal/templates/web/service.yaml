@@ -14,5 +14,6 @@ spec:
     component: web
   ports:
   - name: web
-    port: 5000
+    port: 80
     targetPort: web
+  type: {{ .Values.web.service.type }}
